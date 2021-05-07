@@ -1,0 +1,528 @@
+{
+    "upstreams": [
+        {
+            "Id": "011d189e-496c-4cb1-a285-bea451ab1de0",
+            "Name": "internalpages",
+            "Title": "internalpages",
+            "Description": "",
+            "Protocol": "http",
+            "DoSubstituteBaseTag": true,
+            "DoProxyFullRequestUri": false,
+            "HealthCheckUrl": "\/",
+            "IsSticky": false,
+            "ActiveSide": "blue",
+            "Type": "app",
+            "Department": "platform",
+            "Maintenance": false,
+            "LoadBalanceStrategy": "roundrobin",
+            "CreatedOn": "2021-05-06T17:21:34+00:00",
+            "UpdatedOn": "2021-05-06T17:21:58+00:00",
+            "Servers": [
+                {
+                    "Id": "20ff201f-3e74-4b85-9a65-43daa4e19464",
+                    "Host": "web.internalpages.ext.k8s.test.platform.cmgroep.local",
+                    "Port": 80,
+                    "Description": null,
+                    "BlueGreen": "blue",
+                    "MaxConns": null,
+                    "MaxFails": null,
+                    "FailTimeout": null,
+                    "SlowStart": null,
+                    "IsBackup": false,
+                    "IsDown": false,
+                    "CreatedOn": "2021-05-06T17:21:46+00:00",
+                    "UpdatedOn": "2021-05-06T17:21:46+00:00",
+                    "Weight": null
+                }
+            ],
+            "Routes": [
+                {
+                    "Id": "112c7bb6-6bc7-4799-9ca2-ec5666b57bd9",
+                    "RequestUri": "\/.*",
+                    "HostHeader": "web.internalpages.ext.k8s.test.platform.cmgroep.local",
+                    "Authentication": "sso",
+                    "UnauthenticatedRedirectUrl": "https:\/\/login.cmtest.nl",
+                    "IsSafeForSeo": false,
+                    "CreatedOn": "2021-05-06T17:21:34+00:00",
+                    "UpdatedOn": "2021-05-06T17:21:58+00:00"
+                }
+            ]
+        },
+        {
+            "Id": "1506c61b-6091-4067-969e-c4b8d6be76f7",
+            "Name": "internalblog",
+            "Title": "internalblog",
+            "Description": "",
+            "Protocol": "http",
+            "DoSubstituteBaseTag": true,
+            "DoProxyFullRequestUri": false,
+            "HealthCheckUrl": "\/",
+            "IsSticky": false,
+            "ActiveSide": "blue",
+            "Type": "app",
+            "Department": "platform",
+            "Maintenance": false,
+            "LoadBalanceStrategy": "roundrobin",
+            "CreatedOn": "2021-05-06T17:17:49+00:00",
+            "UpdatedOn": "2021-05-06T17:18:17+00:00",
+            "Servers": [
+                {
+                    "Id": "397bee44-1186-41cb-b40b-a9a86f2fe1da",
+                    "Host": "web.internalblog.ext.k8s.test.platform.cmgroep.local",
+                    "Port": 80,
+                    "Description": null,
+                    "BlueGreen": "blue",
+                    "MaxConns": null,
+                    "MaxFails": null,
+                    "FailTimeout": null,
+                    "SlowStart": null,
+                    "IsBackup": false,
+                    "IsDown": false,
+                    "CreatedOn": "2021-05-06T17:18:04+00:00",
+                    "UpdatedOn": "2021-05-06T17:18:04+00:00",
+                    "Weight": null
+                }
+            ],
+            "Routes": [
+                {
+                    "Id": "cedf9f40-a4c1-43cf-a3f4-79225ea60034",
+                    "RequestUri": "\/.*",
+                    "HostHeader": "web.internalblog.ext.k8s.test.platform.cmgroep.local",
+                    "Authentication": "sso",
+                    "UnauthenticatedRedirectUrl": "https:\/\/login.cmtest.nl",
+                    "IsSafeForSeo": false,
+                    "CreatedOn": "2021-05-06T17:17:49+00:00",
+                    "UpdatedOn": "2021-05-06T17:18:17+00:00"
+                }
+            ]
+        },
+        {
+            "Id": "93ed7287-4ed9-4958-8bbb-b3b0d2cbe30c",
+            "Name": "companyfeed",
+            "Title": "companyfeed",
+            "Description": "",
+            "Protocol": "http",
+            "DoSubstituteBaseTag": true,
+            "DoProxyFullRequestUri": false,
+            "HealthCheckUrl": "\/",
+            "IsSticky": false,
+            "ActiveSide": "blue",
+            "Type": "app",
+            "Department": "platform",
+            "Maintenance": false,
+            "LoadBalanceStrategy": "roundrobin",
+            "CreatedOn": "2021-04-08T15:00:18+00:00",
+            "UpdatedOn": "2021-05-06T13:36:34+00:00",
+            "Servers": [
+                {
+                    "Id": "920d0947-90fe-41b8-b636-77702f8f6848",
+                    "Host": "web.companyfeed.ext.k8s.test.platform.cmgroep.local",
+                    "Port": 80,
+                    "Description": null,
+                    "BlueGreen": "blue",
+                    "MaxConns": null,
+                    "MaxFails": null,
+                    "FailTimeout": null,
+                    "SlowStart": null,
+                    "IsBackup": false,
+                    "IsDown": false,
+                    "CreatedOn": "2021-04-08T15:00:53+00:00",
+                    "UpdatedOn": "2021-05-06T13:33:46+00:00",
+                    "Weight": null
+                }
+            ],
+            "Routes": [
+                {
+                    "Id": "1f825b7c-1f9a-4379-9f2f-7507b325c4a9",
+                    "RequestUri": "\/.*",
+                    "HostHeader": "web.companyfeed.ext.k8s.test.platform.cmgroep.local",
+                    "Authentication": "sso",
+                    "UnauthenticatedRedirectUrl": "https:\/\/login.cmtest.nl",
+                    "IsSafeForSeo": false,
+                    "CreatedOn": "2021-04-08T15:00:18+00:00",
+                    "UpdatedOn": "2021-05-06T13:34:03+00:00"
+                }
+            ]
+        },
+        {
+            "Id": "d91da57f-5ba8-4476-9573-9fb61a8f7c44",
+            "Name": "cc-dev01",
+            "Title": "Creditcard Acquiring Backoffice",
+            "Description": "",
+            "Protocol": "https",
+            "DoSubstituteBaseTag": false,
+            "DoProxyFullRequestUri": true,
+            "HealthCheckUrl": "\/",
+            "IsSticky": false,
+            "ActiveSide": "blue",
+            "Type": "app",
+            "Department": "Payments",
+            "Maintenance": false,
+            "LoadBalanceStrategy": "roundrobin",
+            "CreatedOn": "2021-04-14T15:33:28+00:00",
+            "UpdatedOn": "2021-04-16T08:48:42+00:00",
+            "Servers": [
+                {
+                    "Id": "0c363921-ea1c-48d3-8e76-56b14552911a",
+                    "Host": "10.35.44.20",
+                    "Port": 443,
+                    "Description": null,
+                    "BlueGreen": "blue",
+                    "MaxConns": null,
+                    "MaxFails": null,
+                    "FailTimeout": null,
+                    "SlowStart": null,
+                    "IsBackup": false,
+                    "IsDown": false,
+                    "CreatedOn": "2021-04-14T15:33:50+00:00",
+                    "UpdatedOn": "2021-04-15T12:33:51+00:00",
+                    "Weight": null
+                }
+            ],
+            "Routes": [
+                {
+                    "Id": "aaae252b-bc7f-4447-9e29-696eb7eaf13a",
+                    "RequestUri": "\/.*",
+                    "HostHeader": "www.cmtest.nl",
+                    "Authentication": "sso_with_guest",
+                    "UnauthenticatedRedirectUrl": null,
+                    "IsSafeForSeo": false,
+                    "CreatedOn": "2021-04-14T15:33:28+00:00",
+                    "UpdatedOn": "2021-04-15T13:10:06+00:00"
+                }
+            ]
+        },
+        {
+            "Id": "344f8643-9f60-44e4-aebf-2c3cc8d7e652",
+            "Name": "voice-flowbuilder",
+            "Title": "Voice flowbuilder",
+            "Description": "",
+            "Protocol": "http",
+            "DoSubstituteBaseTag": true,
+            "DoProxyFullRequestUri": false,
+            "HealthCheckUrl": "\/",
+            "IsSticky": false,
+            "ActiveSide": "blue",
+            "Type": "app",
+            "Department": "voice",
+            "Maintenance": false,
+            "LoadBalanceStrategy": "roundrobin",
+            "CreatedOn": "2021-04-15T14:49:14+00:00",
+            "UpdatedOn": "2021-04-15T14:50:20+00:00",
+            "Servers": [
+                {
+                    "Id": "9f92ed50-93ad-45af-8a47-725f7973c1a0",
+                    "Host": "vs-c01haproxy-vip-br-01.voice.cmgroep.local",
+                    "Port": 80,
+                    "Description": null,
+                    "BlueGreen": "blue",
+                    "MaxConns": null,
+                    "MaxFails": 2,
+                    "FailTimeout": 30,
+                    "SlowStart": null,
+                    "IsBackup": false,
+                    "IsDown": false,
+                    "CreatedOn": "2021-04-15T14:49:41+00:00",
+                    "UpdatedOn": "2021-04-15T14:49:41+00:00",
+                    "Weight": null
+                },
+                {
+                    "Id": "ad381b1e-8996-47ee-977d-7717ed5992a2",
+                    "Host": "vs-c01haproxy-vip-br-02.voice.cmgroep.local",
+                    "Port": 80,
+                    "Description": null,
+                    "BlueGreen": "blue",
+                    "MaxConns": null,
+                    "MaxFails": 2,
+                    "FailTimeout": 30,
+                    "SlowStart": null,
+                    "IsBackup": false,
+                    "IsDown": false,
+                    "CreatedOn": "2021-04-15T14:49:55+00:00",
+                    "UpdatedOn": "2021-04-15T14:49:55+00:00",
+                    "Weight": null
+                }
+            ],
+            "Routes": [
+                {
+                    "Id": "97c6fcb1-9d6d-4dd8-9fa4-9196c1964f40",
+                    "RequestUri": "\/.*",
+                    "HostHeader": "flowbuilder.staging.voice.cmgroep.local",
+                    "Authentication": "sso",
+                    "UnauthenticatedRedirectUrl": null,
+                    "IsSafeForSeo": false,
+                    "CreatedOn": "2021-04-15T14:49:14+00:00",
+                    "UpdatedOn": "2021-04-15T14:50:20+00:00"
+                }
+            ]
+        },
+        {
+            "Id": "ce8db8f3-9ace-4b23-bf60-992cf3eed1bd",
+            "Name": "messaging-pricing-studio",
+            "Title": "messaging-pricing-studio",
+            "Description": "",
+            "Protocol": "http",
+            "DoSubstituteBaseTag": true,
+            "DoProxyFullRequestUri": false,
+            "HealthCheckUrl": "\/",
+            "IsSticky": false,
+            "ActiveSide": "blue",
+            "Type": "app",
+            "Department": "Text",
+            "Maintenance": false,
+            "LoadBalanceStrategy": "roundrobin",
+            "CreatedOn": "2021-03-25T09:56:46+00:00",
+            "UpdatedOn": "2021-04-08T07:19:44+00:00",
+            "Servers": [
+                {
+                    "Id": "aa5dd624-5244-4622-9d31-66d729f29697",
+                    "Host": "pricingstudio.app.test.messaging.cmgroep.local",
+                    "Port": 80,
+                    "Description": null,
+                    "BlueGreen": "blue",
+                    "MaxConns": null,
+                    "MaxFails": null,
+                    "FailTimeout": null,
+                    "SlowStart": null,
+                    "IsBackup": false,
+                    "IsDown": false,
+                    "CreatedOn": "2021-03-25T09:57:33+00:00",
+                    "UpdatedOn": "2021-03-25T09:57:33+00:00",
+                    "Weight": null
+                }
+            ],
+            "Routes": [
+                {
+                    "Id": "d120e93b-0dad-4df2-ae84-1dc264b85cd4",
+                    "RequestUri": "\/.*",
+                    "HostHeader": "pricingstudio.app.test.messaging.cmgroep.local",
+                    "Authentication": "sso",
+                    "UnauthenticatedRedirectUrl": null,
+                    "IsSafeForSeo": false,
+                    "CreatedOn": "2021-03-25T09:56:46+00:00",
+                    "UpdatedOn": "2021-03-25T09:58:27+00:00"
+                }
+            ]
+        },
+        {
+            "Id": "dc63ef68-d876-4f71-9fe6-3b1e41a391ef",
+            "Name": "shop",
+            "Title": "shop",
+            "Description": "",
+            "Protocol": "http",
+            "DoSubstituteBaseTag": true,
+            "DoProxyFullRequestUri": false,
+            "HealthCheckUrl": "\/",
+            "IsSticky": false,
+            "ActiveSide": "blue",
+            "Type": "app",
+            "Department": "platform",
+            "Maintenance": false,
+            "LoadBalanceStrategy": "roundrobin",
+            "CreatedOn": "2018-03-13T14:07:08+00:00",
+            "UpdatedOn": "2021-04-01T07:46:37+00:00",
+            "Servers": [
+                {
+                    "Id": "d6e68548-3450-4b50-9d38-791495bf0578",
+                    "Host": "web.shop.k8s.test.platform.cmgroep.local",
+                    "Port": 80,
+                    "Description": null,
+                    "BlueGreen": "blue",
+                    "MaxConns": null,
+                    "MaxFails": null,
+                    "FailTimeout": null,
+                    "SlowStart": null,
+                    "IsBackup": false,
+                    "IsDown": false,
+                    "CreatedOn": "2018-03-13T14:07:40+00:00",
+                    "UpdatedOn": "2021-04-01T07:43:20+00:00",
+                    "Weight": null
+                }
+            ],
+            "Routes": [
+                {
+                    "Id": "381b761c-9567-475e-b209-3ab7e04f5e95",
+                    "RequestUri": "\/.*",
+                    "HostHeader": "web.shop.k8s.test.platform.cmgroep.local",
+                    "Authentication": "sso",
+                    "UnauthenticatedRedirectUrl": "https:\/\/login.cmtest.nl",
+                    "IsSafeForSeo": false,
+                    "CreatedOn": "2018-03-13T14:07:08+00:00",
+                    "UpdatedOn": "2021-04-01T07:45:17+00:00"
+                }
+            ]
+        },
+        {
+            "Id": "796f07e8-411f-45c8-997b-3acb6500c45a",
+            "Name": "documents",
+            "Title": "Documents",
+            "Description": "",
+            "Protocol": "http",
+            "DoSubstituteBaseTag": true,
+            "DoProxyFullRequestUri": false,
+            "HealthCheckUrl": "\/",
+            "IsSticky": false,
+            "ActiveSide": "blue",
+            "Type": "app",
+            "Department": "automation",
+            "Maintenance": false,
+            "LoadBalanceStrategy": "roundrobin",
+            "CreatedOn": "2021-03-30T06:37:18+00:00",
+            "UpdatedOn": "2021-03-30T07:02:44+00:00",
+            "Servers": [
+                {
+                    "Id": "bc49b1e6-f95a-4cb4-bfac-e57748a0790a",
+                    "Host": "web.documents.test.automation.cmgroep.local",
+                    "Port": 80,
+                    "Description": null,
+                    "BlueGreen": "blue",
+                    "MaxConns": null,
+                    "MaxFails": null,
+                    "FailTimeout": null,
+                    "SlowStart": null,
+                    "IsBackup": false,
+                    "IsDown": false,
+                    "CreatedOn": "2021-03-30T06:37:29+00:00",
+                    "UpdatedOn": "2021-03-30T06:37:29+00:00",
+                    "Weight": null
+                }
+            ],
+            "Routes": [
+                {
+                    "Id": "dacf9046-f933-4cf6-9539-2dd9555d79b7",
+                    "RequestUri": "\/.*",
+                    "HostHeader": "web.documents.test.automation.cmgroep.local",
+                    "Authentication": "sso",
+                    "UnauthenticatedRedirectUrl": null,
+                    "IsSafeForSeo": false,
+                    "CreatedOn": "2021-03-30T06:37:18+00:00",
+                    "UpdatedOn": "2021-03-30T06:46:56+00:00"
+                }
+            ]
+        },
+        {
+            "Id": "0af9b137-bef2-4208-b6bb-9d10af247fd2",
+            "Name": "voice-pbxdemo",
+            "Title": "voice pbx demo",
+            "Description": "",
+            "Protocol": "http",
+            "DoSubstituteBaseTag": true,
+            "DoProxyFullRequestUri": false,
+            "HealthCheckUrl": "\/healthz",
+            "IsSticky": false,
+            "ActiveSide": "blue",
+            "Type": "app",
+            "Department": "voice",
+            "Maintenance": false,
+            "LoadBalanceStrategy": "roundrobin",
+            "CreatedOn": "2021-03-22T14:02:31+00:00",
+            "UpdatedOn": "2021-03-22T14:04:35+00:00",
+            "Servers": [
+                {
+                    "Id": "3d158c01-77df-46c7-9b1a-8d2f27d21843",
+                    "Host": "vs-c01haproxy-vip-br-01.voice.cmgroep.local",
+                    "Port": 80,
+                    "Description": null,
+                    "BlueGreen": "blue",
+                    "MaxConns": null,
+                    "MaxFails": 1,
+                    "FailTimeout": 10,
+                    "SlowStart": 30,
+                    "IsBackup": false,
+                    "IsDown": false,
+                    "CreatedOn": "2021-03-22T14:03:15+00:00",
+                    "UpdatedOn": "2021-03-22T14:04:03+00:00",
+                    "Weight": null
+                },
+                {
+                    "Id": "42375924-0d71-4b48-8569-daffcfe95d18",
+                    "Host": "vs-c01haproxy-vip-br-02.voice.cmgroep.local",
+                    "Port": 80,
+                    "Description": null,
+                    "BlueGreen": "blue",
+                    "MaxConns": null,
+                    "MaxFails": 1,
+                    "FailTimeout": 10,
+                    "SlowStart": 30,
+                    "IsBackup": false,
+                    "IsDown": false,
+                    "CreatedOn": "2021-03-22T14:03:20+00:00",
+                    "UpdatedOn": "2021-03-22T14:04:12+00:00",
+                    "Weight": null
+                }
+            ],
+            "Routes": [
+                {
+                    "Id": "3930e8c4-218e-4ac5-af2d-cf49e7afdeb0",
+                    "RequestUri": "\/.*",
+                    "HostHeader": "voice-pbx.staging.voice.cmgroep.local",
+                    "Authentication": "sso",
+                    "UnauthenticatedRedirectUrl": null,
+                    "IsSafeForSeo": false,
+                    "CreatedOn": "2021-03-22T14:02:31+00:00",
+                    "UpdatedOn": "2021-03-22T14:04:35+00:00"
+                }
+            ]
+        },
+        {
+            "Id": "6723ff61-4d64-4414-ae20-952b48587dfc",
+            "Name": "shop-ecommerce",
+            "Title": "shop-ecommerce",
+            "Description": "",
+            "Protocol": "http",
+            "DoSubstituteBaseTag": true,
+            "DoProxyFullRequestUri": false,
+            "HealthCheckUrl": "\/",
+            "IsSticky": false,
+            "ActiveSide": "blue",
+            "Type": "app",
+            "Department": "platform",
+            "Maintenance": false,
+            "LoadBalanceStrategy": "roundrobin",
+            "CreatedOn": "2021-03-15T08:42:35+00:00",
+            "UpdatedOn": "2021-03-15T08:43:33+00:00",
+            "Servers": [
+                {
+                    "Id": "520da047-1296-4203-9458-ac3f9212e1e6",
+                    "Host": "web.shop.k8s.test.platform.cmgroep.local",
+                    "Port": 80,
+                    "Description": null,
+                    "BlueGreen": "blue",
+                    "MaxConns": null,
+                    "MaxFails": null,
+                    "FailTimeout": null,
+                    "SlowStart": null,
+                    "IsBackup": false,
+                    "IsDown": false,
+                    "CreatedOn": "2021-03-15T08:43:01+00:00",
+                    "UpdatedOn": "2021-03-15T08:43:01+00:00",
+                    "Weight": null
+                }
+            ],
+            "Routes": [
+                {
+                    "Id": "1f872f90-14cd-4ea9-b136-ee45ef2d1433",
+                    "RequestUri": "\/.*",
+                    "HostHeader": "web.shop.k8s.test.platform.cmgroep.local",
+                    "Authentication": "sso",
+                    "UnauthenticatedRedirectUrl": "https:\/\/login.cmtest.nl",
+                    "IsSafeForSeo": false,
+                    "CreatedOn": "2021-03-15T08:42:35+00:00",
+                    "UpdatedOn": "2021-03-15T08:43:33+00:00"
+                }
+            ]
+        }
+    ]
+    "departments": [
+        "Access",
+        "automation",
+        "Data",
+        "online",
+        "Payments",
+        "platform",
+        "Text",
+        "Texter",
+        "Ticketing",
+        "voice"
+    ]
+}
